@@ -20,4 +20,3 @@ display_completed_tasks :-
 display_incomplete_tasks :-
     forall(task(_,description,assignee, incomplete),
            format('Task ID: ~w, Description: ~w, Assignee: ~w~n', [id,description,assignee])).
-create_task(1, 'Implement login functionality', 'Alice').
